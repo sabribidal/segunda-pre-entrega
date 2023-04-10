@@ -1,0 +1,71 @@
+// DESKTOP
+@media (min-width:1024px){
+    .grid{
+        display:grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: $full-width;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header;}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+
+    .gridMain{
+        display: grid;
+        grid-template-areas:
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "encabezado encabezado encabezado"
+        "parrafoIzq imgParrafo parrafoDer";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    .imgPrincipal{grid-area: imgPrincipal;}
+    .encabezado{grid-area: encabezado;}
+    .parrafoIzq{grid-area: parrafoIzq;}
+    .imgParrafo{grid-area: imgParrafo;}
+    .parrafoDer{grid-area: parrafoDer;}
+
+    .gridRRSS{
+        display: grid;
+        grid-template-areas:
+        "rrss rrss"
+        "face linke";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 22px auto;
+    }
+    .linke{grid-area: linke;}
+    .face{grid-area: face;}
+    .tituloRRSS{grid-area: rrss;}
+    /* -GRID INDEX- */
+    
+    .gridServicios{
+        display: grid;
+        grid-template-areas:
+        "encServicios encServicios encServicios encServicios"
+        "card1 card2 card3 card4";
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto;
+    }
+    .encabezadoServicios{grid-area: encServicios;}
+    .card1{grid-area: card1;}
+    .card2{grid-area: card2;}
+    .card3{grid-area: card3;}
+    .card4{grid-area: card4;}
+    /* -GRID SERVICIOS- */
+
+    .gridContacto{
+        display: grid;
+        grid-template-areas:
+        "tituloContacto tituloContacto"
+        "form datosContacto";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .tituloContacto{grid-area: tituloContacto;}
+    .form{grid-area: form;}
+    .datosContacto{grid-area: datosContacto;}
+    /* -GRID MAIN CONTACTO */
+}

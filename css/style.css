@@ -1,42 +1,3 @@
-/* GENERAL */
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  padding: 20px;
-  margin: 20px;
-}
-
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
-.p20 {
-  padding: 20px;
-}
-
-.mb20 {
-  margin-bottom: 20px;
-}
-
-.m20 {
-  margin: 20px;
-}
-
-.bgPrincipal {
-  background-color: lightslategray;
-}
-
-.bgLGrey {
-  background-color: lightgrey;
-}
-
 .flexCard {
   display: flex;
   flex-direction: column;
@@ -59,6 +20,24 @@ li {
   cursor: pointer;
 }
 
+/* GENERAL */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
 div h1 {
   text-align: center;
 }
@@ -66,7 +45,7 @@ div h1 {
 * {
   padding: 0;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: tahoma;
 }
 
 .img20 {
@@ -79,6 +58,79 @@ div h1 {
 }
 
 /* DESKTOP */
+@media (min-width: 1024px) {
+  a {
+    font-size: 22px;
+    color: #000;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  p, label {
+    font-size: 20px;
+  }
+}
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1023px) {
+  body {
+    background-color: green;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  header, footer, ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .jCSpaceBetween {
+    justify-content: space-between;
+  }
+  .form form, .datosContacto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .datosContacto {
+    align-items: center;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+  }
+  li {
+    padding: 2px;
+    margin: 2px;
+  }
+  main, footer, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desaparecer {
+    display: none;
+  }
+  .gridServicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridContacto, .form form, .datosContacto {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (min-width: 1024px) {
   .grid {
     display: grid;
@@ -170,73 +222,30 @@ div h1 {
     grid-area: datosContacto;
   }
   /* -GRID MAIN CONTACTO */
-  header, footer, ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .jCSpaceBetween {
-    justify-content: space-between;
-  }
-  .form form, .datosContacto {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
-  .datosContacto {
-    align-items: center;
-  }
-  /* -FLEX */
-  a {
-    font-size: 22px;
-    color: black;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  p, label {
-    font-size: 20px;
-  }
 }
-/* TABLET */
-@media (min-width: 769px) and (max-width: 1023px) {
-  body {
-    background-color: green;
-  }
+ul {
+  list-style-type: none;
 }
-/* MOBILE */
-@media (max-width: 768px) {
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
-  }
-  li {
-    padding: 2px;
-    margin: 2px;
-  }
-  main, footer, header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .desaparecer {
-    display: none;
-  }
-  .gridServicios {
-    display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .gridContacto, .form form, .datosContacto {
-    display: flex;
-    flex-direction: column;
-  }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  padding: 20px;
+  margin: 20px;
+}
+
+.bgPrincipal {
+  background-color: lightslategray;
+}
+
+.bgLGrey {
+  background-color: lightgrey;
+}
+
+header {
+  width: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
