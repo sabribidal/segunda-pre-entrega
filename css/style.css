@@ -244,8 +244,101 @@ li {
   background-color: lightgrey;
 }
 
-header {
-  width: 25%;
+ul {
+  flex-wrap: wrap;
+}
+
+.gradienteHeader {
+  background-image: linear-gradient(to bottom, lightblue, transparent);
+}
+
+.gradienteFooter {
+  background-image: linear-gradient(to top, lightblue, transparent);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    transform: translate(-10px, -10px);
+  }
+}
+@media (min-width: 1023px) {
+  h1 {
+    transform: translate(-10px, -20px);
+  }
+}
+.img-kyrie {
+  transform: rotate(60deg);
+}
+
+.logoFoo {
+  transform: scale(-1, -1);
+}
+
+.logo {
+  transform: skew(60deg, 20deg);
+}
+
+.encabezado {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  transition: height 1s, width 2s, background-color 3s;
+}
+
+.encabezado:hover {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+.linke {
+  transition: all 2s;
+}
+
+.linke:hover {
+  transform: translateY(-20px);
+}
+
+@keyframes transformacion {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  25% {
+    transform: rotate(200deg);
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(0deg);
+    transform: scale(2, 2);
+  }
+  75% {
+    transform: scale(1, 1);
+    transform: skew(60deg, 100deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+.logo {
+  animation-name: transformacion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h3 {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
